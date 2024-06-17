@@ -7,6 +7,8 @@ import {
   BiLeftArrowAlt,
   BiSpreadsheet,
   BiRightArrowAlt,
+  BiColumns,
+  BiIntersect,
 } from "react-icons/bi";
 import Link from "next/link";
 
@@ -77,7 +79,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
               >
                 <BiBuildingHouse />
                 <span className={`${isCollapsed ? "hidden" : "block"}`}>
-                  메뉴 1
+                  Menu 1
                 </span>
               </li>
             </Link>
@@ -95,7 +97,43 @@ const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
               >
                 <BiSpreadsheet />
                 <span className={`${isCollapsed ? "hidden" : "block"}`}>
-                  메뉴 2
+                  Menu 2
+                </span>
+              </li>
+            </Link>
+            <Link
+              className={``}
+              href={"/menu3"}
+              onClick={() => {
+                toggleSidebarChangeName("히스토리");
+              }}
+            >
+              <li
+                className={`mb-4 flex items-center gap-2 cursor-pointer ${
+                  isCollapsed ? "justify-center text-xl" : "pl-4"
+                }`}
+              >
+                <BiColumns />
+                <span className={`${isCollapsed ? "hidden" : "block"}`}>
+                  Menu 3
+                </span>
+              </li>
+            </Link>
+            <Link
+              className={``}
+              href={"/menu4"}
+              onClick={() => {
+                toggleSidebarChangeName("히스토리");
+              }}
+            >
+              <li
+                className={`mb-4 flex items-center gap-2 cursor-pointer ${
+                  isCollapsed ? "justify-center text-xl" : "pl-4"
+                }`}
+              >
+                <BiIntersect />
+                <span className={`${isCollapsed ? "hidden" : "block"}`}>
+                  Menu 4
                 </span>
               </li>
             </Link>
