@@ -1,5 +1,13 @@
 # 개요
 
+<div style="text-align:center;">
+<img src="./public/s1.png" width="80%" height="50%" title="dev"/>
+</div>
+
+<div style="text-align:center;">
+<img src="./public/s2.png" width="60%" height="50%" title="dev"/>
+</div>
+ <br />
 Next.js App Router와 Tailwind CSS를 사용하여 작성된 반응형 레이아웃 컴포넌트입니다. <br />
 이 컴포넌트는 접이식 사이드바와 메인 콘텐츠 영역을 포함하고 있으며, Context API를 통해 사이드바의 상태를 관리합니다. 사용자는 메뉴와 페이지와 연결된 Router를 통한 페이지 이동을 할 수 있습니다. <br /> <br />
 
