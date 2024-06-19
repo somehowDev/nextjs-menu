@@ -1,9 +1,9 @@
 # 개요
 
 <div style="text-align:center;">
-<img src="./public/s1.png" width="300" height="300" title="dev"/>
+<img src="./public/s1.png" width="600" height="400" title="dev"/>
 
-<img src="./public/s2.png" width="180" height="300" title="dev"/>
+<img src="./public/s2.png" width="280" height="400" title="dev"/>
 </div>
  <br />
 Next.js App Router와 Tailwind CSS를 사용하여 작성된 반응형 레이아웃 컴포넌트입니다. <br />
