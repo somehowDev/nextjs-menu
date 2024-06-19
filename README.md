@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 개요
 
-## Getting Started
+Next.js App Router와 Tailwind CSS를 사용하여 작성된 반응형 레이아웃 컴포넌트입니다. <br />
+이 컴포넌트는 접이식 사이드바와 메인 콘텐츠 영역을 포함하고 있으며, Context API를 통해 사이드바의 상태를 관리합니다. 사용자는 메뉴와 페이지와 연결된 Router를 통한 페이지 이동을 할 수 있습니다. <br /> <br />
 
-First, run the development server:
+# 주요 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### App Router(Nextjs)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 페이지 전환: 각 메뉴 항목은 Next.js의 Link 컴포넌트를 사용하여 다른 페이지로 라우팅 됩니다.
+- 자동화된 라우팅: 페이지는 pages 디렉토리에 파일을 추가하는 것만으로 자동으로 라우팅됩니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Context API Provider
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 사이드바 상태 관리: Context API를 사용하여 사이드바의 확장 및 축소 상태를 전역에서 관리합니다.
+- 토글 기능: 사용자가 사이드바를 확장하거나 축소할 수 있는 기능을 제공합니다.
 
-## Learn More
+### 메뉴 및 페이지 전환
 
-To learn more about Next.js, take a look at the following resources:
+- 동적 메뉴: 사이드바 메뉴 항목을 클릭하면 해당 페이지로 이동합니다.
+- 메뉴 제목 변경: 선택된 메뉴에 따라 사이드바의 제목이 동적으로 변경됩니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 반응형 디자인
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 모바일 퍼스트 전략의 tailwindCSS를 통한 반응형 디자인 적용
+- 자동 축소/확장: 화면 크기에 따라 사이드바가 자동으로 축소되거나 확장됩니다. 768px 이하의 화면에서는 사이드바가 자동으로 축소되고, 그 이상의 화면에서는 확장됩니다.
+- 이벤트 리스너: 윈도우 크기 변경 시 사이드바 상태를 업데이트하는 이벤트 리스너를 사용합니다.
